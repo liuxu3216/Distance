@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: pub
+    password: pub@12369
+    url: jdbc:postgresql://60.10.135.153:30000/one_information?charSet=utf-8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl: true
+        show_sql: true
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+server:
+  servlet:
+    context-path: /distance
+  port: 8090
